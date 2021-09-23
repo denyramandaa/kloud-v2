@@ -17,6 +17,10 @@ a:hover {
 .w-full {
     width: 100%;
 }
+.w-16 {
+  width: 16px;
+}
+
 .w-24 {
     width: 24px;
 }
@@ -62,6 +66,9 @@ a:hover {
 }
 .text-grey {
     color: #666666;
+}
+.text-grey-100 {
+  color: #999999;
 }
 .text-grey-200 {
     color: #928883
@@ -279,6 +286,14 @@ a:hover {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+}
+.underline-grey {
+  border-style: solid;
+  border-color: #928883;
+  border-width: thick;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
 }
 .youtube-icon {
     position: absolute;

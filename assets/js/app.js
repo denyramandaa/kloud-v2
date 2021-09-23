@@ -168,6 +168,20 @@ $(document).ready(function() {
 
         sidebarStatus=!sidebarStatus
     })
+    // Hendy Start
+    $('#FirstFFO').datepicker({
+      uiLibrary: 'bootstrap4'
+    })
+    $('#SecondFFO').datepicker({
+      uiLibrary: 'bootstrap4'
+    })
+    $('#FirstFFOModal').datepicker({
+      uiLibrary: 'bootstrap4'
+    })
+    $('#SecondFFOModal').datepicker({
+      uiLibrary: 'bootstrap4'
+    })
+    // Hendy End
     $('#dateFFO').datepicker({
         uiLibrary: 'bootstrap4'
     })
