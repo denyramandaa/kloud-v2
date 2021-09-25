@@ -231,7 +231,6 @@ $(document).ready(function() {
         $('.review-btn').addClass('underline-grey font-weight-bold').removeClass('text-grey-100')
         $('.description-wrapper').css('display', 'none')
         $('.review-wrapper').css('display', 'flex')
-        
     })
     $('.jumbotron--slick').slick({
         dots: false,

@@ -6,14 +6,10 @@
         });
 
         var gal = $('#jsGallery').jsGallery();
-
-        $('#showGal').click(function(){
-            gal.jsGallery('show', '', 4);
-        });
         
         $('.showGal').each(function(idx) {
             $(this).click(() => {
-                gal.jsGallery('show', $(this).data('album-name'), idx);
+                gal.jsGallery('show', $(this).data('album-name'), parseInt($(this).data('album-idx')));
             })
         });
     });
