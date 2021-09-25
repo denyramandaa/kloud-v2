@@ -168,20 +168,20 @@ $(document).ready(function() {
 
         sidebarStatus=!sidebarStatus
     })
-    // Hendy Start
-    $('#FirstFFO').datepicker({
+    // dev 2 Start
+    $('#startDateM').datepicker({
       uiLibrary: 'bootstrap4'
     })
-    $('#SecondFFO').datepicker({
+    $('#endDateM').datepicker({
       uiLibrary: 'bootstrap4'
     })
-    $('#FirstFFOModal').datepicker({
+    $('#startDate').datepicker({
       uiLibrary: 'bootstrap4'
     })
-    $('#SecondFFOModal').datepicker({
+    $('#endDate').datepicker({
       uiLibrary: 'bootstrap4'
     })
-    // Hendy End
+    // dev 2 End
     $('#dateFFO').datepicker({
         uiLibrary: 'bootstrap4'
     })
@@ -219,6 +219,19 @@ $(document).ready(function() {
     $('.youtube-pop-up-overlay').click(() => {
         $('.youtube-pop-up').hide()
         $('.iframe-youtube').attr('src', '')
+    })
+    $('.description-btn').click(()=> {
+        $('.review-btn').removeClass('underline-grey font-weight-bold').addClass('text-grey-100')
+        $('.description-btn').addClass('underline-grey font-weight-bold').removeClass('text-grey-100')
+        $('.review-wrapper').css('display', 'none')
+        $('.description-wrapper').css('display', 'flex')
+    })
+    $('.review-btn').click(()=> {
+        $('.description-btn').removeClass('underline-grey font-weight-bold').addClass('text-grey-100')
+        $('.review-btn').addClass('underline-grey font-weight-bold').removeClass('text-grey-100')
+        $('.description-wrapper').css('display', 'none')
+        $('.review-wrapper').css('display', 'flex')
+        
     })
     $('.jumbotron--slick').slick({
         dots: false,

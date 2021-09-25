@@ -1,6 +1,7 @@
 /* reset */
 body {
     font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 img {
     width: 100%;
@@ -140,7 +141,10 @@ a:hover {
   color: #999999;
 }
 .text-grey-200 {
-    color: #928883
+    color: #928883;
+}
+.text-grey-300 {
+    color: #333;
 }
 .border-1-grey {
     border: 1px solid #EEEEEE;
@@ -293,7 +297,7 @@ a:hover {
     background-image: url('../images/icons/arr-right-brown.png');
 }
 
-.swiper--filters select {
+select {
     background-color: #fff;
     font-size: 16px;
     background-image: url('../images/icons/arr-bottom-grey.png');
@@ -521,6 +525,20 @@ footer {
 }
 .jumbotron--slick .slick-slide{
     width: 296px;
+}
+.reverse-date-icon .input-group {
+    flex-direction: row-reverse;
+}
+.reverse-date-icon .input-group input {
+    border-radius: 0;
+}
+.reverse-date-icon .input-group span button {
+    border-radius: 0;
+    border-left: 1px solid #ced4da !important;
+    border-right: 0 !important;
+}
+.review-wrapper {
+    display: none;
 }
 /* media query */
 @media (min-width: 760px) {
