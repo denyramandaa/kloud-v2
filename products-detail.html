@@ -118,7 +118,7 @@
 								<div class="col-auto">
 									<a href="#" class="text-dark">Gallery</a>
 								</div>
-								<div class="col-auto">
+								<div class="col-auto font-weight-bold">
 									<a href="#" class="text-dark">Blogs</a>
 								</div>
 								<div class="col-auto">
@@ -169,6 +169,437 @@
 
 	<!-- start here: name the section for easy management -->
 	<!-- ex: <section class="headerForm w-full mt-5 mt-md-2 mt-lg-4 pb-0 mb-4 mb-lg-0 px-0 bg-white"> </section> -->
+  <!-- start filter -->
+  <section class="container jumbotron w-full mt-5 mt-md-2 mt-lg-4 pb-0 mb-0 px-md-3 px-0 bg-white">
+    <div class="py-2 px-3 mx-3 mx-md-0 bg-rounded-8-grey rounded-0">
+      <div class="row py-2 px-3">
+        <!-- Start Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-rounded-8-grey rounded-0">
+              <div class="modal-body">
+                <div class="w-full">
+                  <div class="w-full">
+                    <div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-white border-right-0">
+                            <img class="w-16" src="assets/images/icons/magnifier-icon.png" alt="">
+                          </span>
+                        </div>
+                        <input type="text" class="form-control bg-white border-left-0" placeholder="Pavillion" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="w-full py-2">
+                    <div class="reverse-date-icon">
+                      <input id="startDate" placeholder="Wed, 7 Sep 2021" />
+                      <input id="endDate" placeholder="Wed, 7 Sep 2021" />
+                    </div>
+                  </div>
+        
+                  <div class="w-full">
+                    <div>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-white border-right-0">
+                            <img class="w-16" src="assets/images/icons/pax-icon.png" alt="">
+                          </span>
+                        </div>
+                        <select class="form-control bg-white border-left-0">
+                          <option>90 pax</option>
+                          <option>100 pax</option>
+                          <option>120 pax</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-top-0">
+                <button type="submit" class="btn btn-brown col-12" data-dismiss="modal">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal -->
+        <div class="col-12 col-lg-11 col-md-10 row d-none d-md-flex">
+          <div class="col">
+            <div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white border-right-0">
+                    <img class="w-16" src="assets/images/icons/magnifier-icon.png" alt="">
+                  </span>
+                </div>
+                <input type="text" class="form-control bg-white border-left-0" placeholder="Pavillion" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="d-flex reverse-date-icon">
+              <input id="startDateM" placeholder="Wed, 7 Sep 2021" />
+              <input id="endDateM" placeholder="Wed, 7 Sep 2021" />
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-white border-right-0">
+                    <img class="w-16" src="assets/images/icons/pax-icon.png" alt="">
+                  </span>
+                </div>
+                <select class="form-control bg-white border-left-0">
+                  <option>90 pax</option>
+                  <option>100 pax</option>
+                  <option>120 pax</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-brown col-lg-1 col-md-2 col-12 px-0" data-toggle="modal" data-target="#exampleModalCenter">Update</button>
+      </div>
+    </div>
+  </section>
+  <!-- end filter -->
+
+  <!-- start content -->
+  <section class="container pt-4 pb-4">
+    <div class=" row">
+      <div class="col-md-8 col-12">
+        <div class="d-flex">
+          <div class="col-8">
+
+          </div>
+          <div class="col-4">
+
+          </div>
+        </div>
+        <div>
+          <h2 class="font-weight-bold text-4xl mb-2">
+            Pavillion
+          </h2>
+        </div>
+        <div class="d-flex">
+          <div class="font-weight-bold py-2 underline-grey description-btn cursor-pointer">
+            Description
+          </div>
+          <div class="text-grey-100 py-2 ml-4 review-btn cursor-pointer">
+            Review (0)
+          </div>
+        </div>
+        <span class="thin-line-grey-full mb-2"></span>
+        <!-- Description wrapper -->
+        <div class="description-wrapper row mt-4">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="font-weight-bold">
+              Cleaning & Sanitizing
+            </div>
+            <div class="pt-2 text-grey">
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Surfaces sanitized between seatings
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Common areas deep cleaned daily
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Digital, disposable or sanitized menu provided
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Sanitizer or wipes provided for customers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="font-weight-bold">
+              Protective Equipment
+            </div>
+            <div class="pt-2 text-grey">
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Waitstaff wear masks
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Diners must wear masks unless eating or drinking
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="font-weight-bold">
+              Physical Distancing
+            </div>
+            <div class="pt-2 text-grey">
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Distancing maintained in common areas
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <div class="font-weight-bold">
+              Screening
+            </div>
+            <div class="pt-2 text-grey">
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Sick staff prohibited in the workplace
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Staff temperature check required
+                </div>
+              </div>
+              <div class="d-flex align-items-center pb-2">
+                <div class="mr-2">
+                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                </div>
+                <div>
+                  Contact tracing information collected
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- review wrapper -->
+        <div class="review-wrapper row mt-4">
+          <div class="col-12 col-md-6">
+            <div class="w-full mb-4">
+              <div class="font-weight-bold">Dany Surya Wijaya</div>
+              <div class="text-grey">Mantap Gan, Ruangan Bersih, Ada Tv, Rekomended</div>
+            </div>
+            <div class="w-full mb-4">
+              <div class="font-weight-bold">Dany Surya Wijaya</div>
+              <div class="text-grey">Mantap Gan, Ruangan Bersih, Ada Tv, Rekomended</div>
+            </div>
+            <div class="w-full mb-4">
+              <div class="font-weight-bold">Dany Surya Wijaya</div>
+              <div class="text-grey">Mantap Gan, Ruangan Bersih, Ada Tv, Rekomended</div>
+            </div>
+          </div>
+        </div>
+        <!-- Package -->
+        <div class="p-3 mt-4 bg-white border-1-grey rounded-8 d-inline-block">
+          <div class="font-weight-bold">
+            Package Includes:
+          </div>
+          <div class="row flex-wrap">
+            <!-- Kumpulan paket -->
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/coffe-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Coffe & Tea
+              </div>
+            </div>
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/wifi-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Wi-Fi
+              </div>
+            </div>
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/projector-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Projector
+              </div>
+            </div>
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/flipchart-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Flipchart
+              </div>
+            </div>
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/private-room-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Private Room
+              </div>
+            </div>
+            <div class="text-center col-auto mt-3">
+              <img class="w-24 mb-1" src="assets/images/icons/nusrsing-room-icon.png" alt="Supporting Bussiness Service">
+              <div class="text-sm">
+                Nursing Room
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cancelation Policy -->
+        <div class="bg-rounded-8-grey rounded-0 p-3 mt-4 w-full">
+          <div class="font-weight-bold text-grey-100 mb-2">
+            Cancellation Policy
+          </div>
+          <div>
+            Free cancellation before 22-Sep-2021 00:00. If cancelled or modified later than 22-Sep-2021 00:00, cancellation will incur fee.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="col-12 pt-4 mt-4 pt-md-0 mt-md-0">
+          <div class="form-group pb-4">
+            <label class="font-weight-bold">Package</label>
+            <select class="form-control">
+              <option>Hourly</option>
+              <option>Daily</option>
+              <option>Weekly</option>
+              <option>Monthly</option>
+            </select>
+          </div>
+          <span class="thin-line-grey-full mb-4"></span>
+          <div class="form-group pb-4">
+            <div class="form-group">
+              <label class="font-weight-bold" >Date</label>
+              <input id="dateFFO" />
+            </div>
+          </div>
+          <span class="thin-line-grey-full mb-4"></span>
+          <div class="form-group pb-4">
+            <label class="font-weight-bold">Time Slot</label>
+            <select class="form-control">
+              <option>06:00</option>
+              <option>07:00</option>
+              <option>08:00</option>
+              <option>09:00</option>
+              <option>10:00</option>
+            </select>
+          </div>
+          <span class="thin-line-grey-full mb-4"></span>
+          <div class="form-group">
+            <label class="font-weight-bold" for="suiteTypeFFO">Other Charge</label>
+            <div class="mb-4 text-grey">
+              <label class="checkCustom">
+                Flipchart
+                <input type="checkbox" value="">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="mb-4 text-grey">
+              <label class="checkCustom">
+                General adminstration office (During office hours)
+                <input type="checkbox" value="">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="mb-4 text-grey">
+              <label class="checkCustom">
+                General adminstration office (During office hours)
+                <input type="checkbox" value="">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="mb-4 text-grey">
+              <label class="checkCustom">
+                Air-Con Extension
+                <input type="checkbox" value="">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <span class="thin-line-grey-full mb-4"></span>
+          <div class="form-group d-md-flex">
+            <div class="w-full mb-4">
+              <label class="font-weight-bold">Total Price</label>
+              <h4 class="font-weight-bold text-grey">
+                IDR. 4.500.000
+              </h4>
+            </div>
+            <div>
+              <button type="submit" class="btn btn-light-brown col-12">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end content -->
+
+	<!-- testimonial -->
+	<section class="container">
+    <span class="thin-line-grey-full mb-4"></span>
+    <h2 class="font-weight-bold text-2xl mb-2">
+      Other Rooms
+    </h2>
+		<div class="row pt-3 swiper-container swiper--testimonials">
+			<div class="swiper-wrapper d-flex flex-nowrap">
+				<div class="swiper-slide card">
+					<a href="#" class="card-body p-0 text-grey-300">
+            <div class="w-full ratio-horizontal" style="background-image: url('assets/images/rooms-1.jpg');"></div>
+            <div class="p-4 text-center">
+              <h3 class="mb-0 font-weight-bold text-2xl">Meeting Room Level 23A</h3>
+              <div class="mt-2 custom-hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit.</p>
+              </div>
+            </div>
+					</a>
+				</div>
+				<div class="swiper-slide card">
+					<a href="#" class="card-body p-0 text-grey-300">
+            <div class="w-full ratio-horizontal" style="background-image: url('assets/images/rooms-1.jpg');"></div>
+            <div class="p-4 text-center">
+              <h3 class="mb-0 font-weight-bold text-2xl">Meeting Room Level 23A</h3>
+              <div class="mt-2 custom-hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit.</p>
+              </div>
+            </div>
+					</a>
+				</div>
+				<div class="swiper-slide card">
+					<a href="#" class="card-body p-0 text-grey-300">
+            <div class="w-full ratio-horizontal" style="background-image: url('assets/images/rooms-1.jpg');"></div>
+            <div class="p-4 text-center">
+              <h3 class="mb-0 font-weight-bold text-2xl">Meeting Room Level 23A</h3>
+              <div class="mt-2 custom-hide">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam eu eu, neque leo orci diam viverra sit.</p>
+              </div>
+            </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
     <!-- footer -->
 	<section class="footer container text-grey-200">

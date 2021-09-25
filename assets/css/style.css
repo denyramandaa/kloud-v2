@@ -1,6 +1,7 @@
 /* reset */
 body {
     font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 img {
     width: 100%;
@@ -14,9 +15,82 @@ a:hover {
 }
 
 /* custom bs */
+
+
+/* Custom Checkbox */
+.checkCustom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkCustom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: solid 2px #928883;
+}
+
+/* On mouse-over, add a grey background color */
+.checkCustom:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkCustom input:checked ~ .checkmark {
+  background-color: #928883;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkCustom input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkCustom .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
 .w-full {
     width: 100%;
 }
+.w-16 {
+  width: 16px;
+}
+
 .w-24 {
     width: 24px;
 }
@@ -63,8 +137,14 @@ a:hover {
 .text-grey {
     color: #666666;
 }
+.text-grey-100 {
+  color: #999999;
+}
 .text-grey-200 {
-    color: #928883
+    color: #928883;
+}
+.text-grey-300 {
+    color: #333;
 }
 .border-1-grey {
     border: 1px solid #EEEEEE;
@@ -217,7 +297,7 @@ a:hover {
     background-image: url('../images/icons/arr-right-brown.png');
 }
 
-.swiper--filters select {
+select {
     background-color: #fff;
     font-size: 16px;
     background-image: url('../images/icons/arr-bottom-grey.png');
@@ -280,6 +360,24 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+.thin-line-grey-full {
+  width: 100%;
+  height: 1px;
+  background: #999999;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.underline-grey {
+  border-style: solid;
+  border-color: #928883;
+  border-width: thick;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+}
 .youtube-icon {
     position: absolute;
     left: 50%;
@@ -334,6 +432,11 @@ footer {
     background-color: #928883;
     color: #fff;
     padding: 8px 36px;
+}
+.btn-light-brown {
+  background-color: #CE8F55;
+  color: #fff;
+  padding: 8px 36px;
 }
 .floating-button-bottom {
     position: absolute;
@@ -422,6 +525,20 @@ footer {
 }
 .jumbotron--slick .slick-slide{
     width: 296px;
+}
+.reverse-date-icon .input-group {
+    flex-direction: row-reverse;
+}
+.reverse-date-icon .input-group input {
+    border-radius: 0;
+}
+.reverse-date-icon .input-group span button {
+    border-radius: 0;
+    border-left: 1px solid #ced4da !important;
+    border-right: 0 !important;
+}
+.review-wrapper {
+    display: none;
 }
 /* media query */
 @media (min-width: 760px) {
