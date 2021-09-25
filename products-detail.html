@@ -173,7 +173,7 @@
   <!-- start filter -->
   <section class="container jumbotron w-full mt-5 mt-md-2 mt-lg-4 pb-0 mb-0 px-md-3 px-0 bg-white">
     <div class="py-2 px-3 mx-3 mx-md-0 bg-rounded-8-grey rounded-0">
-      <div class="row py-2 px-3">
+      <div class="row py-2 px-3 justify-content-center">
         <!-- Start Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -226,7 +226,7 @@
         </div>
         <!-- End Modal -->
         <div class="col-12 col-lg-11 row d-none d-lg-flex">
-          <div class="col">
+          <div class="col px-0 pr-3">
             <div>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -239,14 +239,14 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="co px-0 pr-3">
             <div class="d-flex reverse-date-icon">
               <input id="startDateM" placeholder="Wed, 7 Sep 2021" />
               <input id="endDateM" placeholder="Wed, 7 Sep 2021" />
             </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-3 px-0 pr-3">
             <div>
               <div class="input-group">
                 <div class="input-group-prepend">
@@ -263,7 +263,7 @@
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-brown col-lg-1 col-12 px-0" data-toggle="modal" data-target="#exampleModalCenter">Update</button>
+        <button type="submit" class="btn btn-brown col-lg-1 col-12 px-0 py-1" data-toggle="modal" data-target="#exampleModalCenter">Update</button>
       </div>
     </div>
   </section>
@@ -290,20 +290,20 @@
         <div class="d-flex mb-4 flex-wrap flex-lg-nowrap">
           <div class="col-12 col-lg-7 px-0 position-relative mb-3 mb-lg-0">
             <a href="#" class="view-in-3d"><img src="assets/images/icons/view-in-3d.png" alt="view in 3d"></a>
-            <div class="ratio-horizontal-2 rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="Preview Keseluruhan" data-album-idx="0"></div>
+            <div class="ratio-gallery-large rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="Preview Keseluruhan" data-album-idx="0"></div>
           </div>
           <div class="col-12 col-lg-5 px-0 pl-lg-3 d-flex d-lg-block">
-            <div class="col-6 col-lg-12 mb-lg-3 px-0 pr-3 pr-lg-0">
-              <div class="ratio-horizontal rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="Preview Keseluruhan" data-album-idx="1"></div>
+            <div class="col-3 col-lg-12 mb-lg-3 px-0 mr-3 mr-lg-0">
+              <div class="ratio-gallery-medium rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="Preview Keseluruhan" data-album-idx="1"></div>
             </div>
             <div class="col-6 col-lg-12 d-flex px-0">
-              <div class="col-6 px-0 pr-2">
-                <div class="ratio-box rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="Preview Keseluruhan" data-album-idx="2"></div>
+              <div class="col-6 px-0 mr-2 mr-lg-0 pr-0 pr-lg-2">
+                <div class="ratio-gallery-small rounded-8 cursor-pointer showGal" style="background-image: url('assets/images/rooms-1.jpg');" data-album-name="meview Keseluruhan" data-album-idx="2"></div>
               </div>
-              <div class="col-6 px-0 pl-2">
+              <div class="col-6 px-0 ml-2 ml-lg-0 pl-0 pl-lg-2">
                 <div class="album-overlay cursor-pointer showGal" data-album-name="Kamar Mandi" data-album-idx="1">
-                  <span class="album-see-all">See All Photos</span>
-                  <div class="ratio-box rounded-8" style="background-image: url('assets/images/rooms-1.jpg');"></div>
+                  <span class="album-see-all px-2">See All Photos</span>
+                  <div class="ratio-gallery-small rounded-8" style="background-image: url('assets/images/rooms-1.jpg');"></div>
                 </div>
               </div>
             </div>
@@ -325,110 +325,114 @@
         <span class="thin-line-grey-full mb-2"></span>
         <!-- Description wrapper -->
         <div class="description-wrapper row mt-4">
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="font-weight-bold">
-              Cleaning & Sanitizing
+          <div class="col-12 px-0 col-lg-6">
+            <div class="col-12 mb-3">
+              <div class="font-weight-bold">
+                Cleaning & Sanitizing
+              </div>
+              <div class="pt-2 text-grey">
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Surfaces sanitized between seatings
+                  </div>
+                </div>
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Common areas deep cleaned daily
+                  </div>
+                </div>
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Digital, disposable or sanitized menu provided
+                  </div>
+                </div>
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Sanitizer or wipes provided for customers
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="pt-2 text-grey">
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Surfaces sanitized between seatings
-                </div>
+            <div class="col-12 mb-3">
+              <div class="font-weight-bold">
+                Physical Distancing
               </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Common areas deep cleaned daily
-                </div>
-              </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Digital, disposable or sanitized menu provided
-                </div>
-              </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Sanitizer or wipes provided for customers
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="font-weight-bold">
-              Protective Equipment
-            </div>
-            <div class="pt-2 text-grey">
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Waitstaff wear masks
-                </div>
-              </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Diners must wear masks unless eating or drinking
+              <div class="pt-2 text-grey">
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Distancing maintained in common areas
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="font-weight-bold">
-              Physical Distancing
-            </div>
-            <div class="pt-2 text-grey">
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+          <div class="col-12 px-0 col-lg-6">
+            <div class="col-12 mb-3">
+              <div class="font-weight-bold">
+                Protective Equipment
+              </div>
+              <div class="pt-2 text-grey">
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Waitstaff wear masks
+                  </div>
                 </div>
-                <div>
-                  Distancing maintained in common areas
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Diners must wear masks unless eating or drinking
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-md-6 mb-3 mb-md-0">
-            <div class="font-weight-bold">
-              Screening
-            </div>
-            <div class="pt-2 text-grey">
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Sick staff prohibited in the workplace
-                </div>
+            <div class="col-12 mb-3">
+              <div class="font-weight-bold">
+                Screening
               </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+              <div class="pt-2 text-grey">
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Sick staff prohibited in the workplace
+                  </div>
                 </div>
-                <div>
-                  Staff temperature check required
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Staff temperature check required
+                  </div>
                 </div>
-              </div>
-              <div class="d-flex align-items-center pb-2">
-                <div class="mr-2">
-                  <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
-                </div>
-                <div>
-                  Contact tracing information collected
+                <div class="d-flex align-items-center pb-2">
+                  <div class="mr-2">
+                    <img class="w-16" src="assets/images/icons/check-green-icon.png" alt="">
+                  </div>
+                  <div>
+                    Contact tracing information collected
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,7 +512,7 @@
       </div>
       <div class="col-lg-4 col-12">
         <div class="col-12 pt-4 mt-4 pt-md-0 mt-md-0">
-          <div class="form-group pb-4">
+          <div class="form-group mb-4">
             <label class="font-weight-bold">Package</label>
             <select class="form-control">
               <option>Hourly</option>
@@ -518,14 +522,14 @@
             </select>
           </div>
           <span class="thin-line-grey-full mb-4"></span>
-          <div class="form-group pb-4">
+          <div class="form-group mb-4">
             <div class="form-group">
               <label class="font-weight-bold" >Date</label>
               <input id="dateFFO" />
             </div>
           </div>
           <span class="thin-line-grey-full mb-4"></span>
-          <div class="form-group pb-4">
+          <div class="form-group mb-4">
             <label class="font-weight-bold">Time Slot</label>
             <select class="form-control">
               <option>06:00</option>
