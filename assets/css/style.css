@@ -581,6 +581,12 @@ footer {
     left: 12px;
     bottom: 12px;
 }
+.icon-zoom-in.jsg-zoom {
+    display: none;
+}
+.jsg-title .jsg-albums {
+    text-overflow: unset;
+}
 /* media query */
 @media (min-width: 760px) {
     .jumbotron--slick .slick-slide{
