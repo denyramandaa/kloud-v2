@@ -620,6 +620,9 @@ footer {
     background-size: cover;
     background-position: center;
 }
+.reverse-date-icon .input-group-append {
+    background: #fff;
+}
 /* .fixed-in-mobile {
     position: fixed;
     width: 100%;
