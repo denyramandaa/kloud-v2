@@ -535,6 +535,17 @@ footer {
     background-image: url('../images/icons/arr-bottom.png');
     background-size: cover;
 }
+.sidebar .dropdown-toggle::after {
+    border: none;
+    width: 8px;
+    height: 4px;
+    background-image: url('../images/icons/arr-bottom.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
 .jumbotron--slick {
     overflow: hidden;
 }
@@ -622,6 +633,71 @@ footer {
     margin-top: 15px;
 } */
 
+input[type='radio'] {
+    appearance: none;
+}
+input[type='radio']:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-image: url(../images/icons/rad.png);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-image: url(../images/icons/rad-active.png);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.sosmed .icon {
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    background-position: center;
+}
+.sosmed .icon.fb{
+    background-image: url('../images/icons/facebook-icon.png');
+}
+.sosmed .icon.yt{
+    background-image: url('../images/icons/youtube-icon-medsos.png');
+}
+.sosmed .icon.tiktok{
+    background-image: url('../images/icons/tiktok-icon.png');
+}
+.sosmed .icon.ig{
+    background-image: url('../images/icons/instagram-icon.png');
+}
+
+.sosmed .icon.fb:hover{
+    background-image: url('../images/icons/facebook-icon-active.png');
+}
+.sosmed .icon.yt:hover{
+    background-image: url('../images/icons/youtube-icon-medsos-active.png');
+}
+.sosmed .icon.tiktok:hover{
+    background-image: url('../images/icons/tiktok-icon-active.png');
+}
+.sosmed .icon.ig:hover{
+    background-image: url('../images/icons/instagram-icon-active.png');
+}
+
+
 /* media query */
 @media (min-width: 760px) {
     .jumbotron--slick .slick-slide{
@@ -703,6 +779,9 @@ footer {
 @media (min-width: 991px) {
     .bottom-75 {
         bottom: 20px;
+    }
+    .filter-box .swiper-wrapper {
+        transform: none !important;
     }
     
     .ratio-gallery-large {

@@ -21,7 +21,7 @@
 		<div class="sidebar d-block d-lg-none position-fixed py-5 bg-white">
 			<div class="row py-5 px-4">
 				<div class="col-12 py-2">
-					<a class="text-dark p-0 dropdown-toggle nav-link font-weight-bold" href="#collapsePlans" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false"  aria-controls="collapsePlans">
+					<a class="text-dark p-0 dropdown-toggle nav-link font-weight-bold position-relative" href="#collapsePlans" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false"  aria-controls="collapsePlans">
 						Plans
 					</a>
 					<div class="collapse" id="collapsePlans">
@@ -55,7 +55,7 @@
 					<a href="#" class="text-dark font-weight-bold">FAQ</a>
 				</div>
 				<div class="col-12 py-2">
-					<a class="text-dark p-0 dropdown-toggle nav-link font-weight-bold" href="#collapseAuth" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false"  aria-controls="collapseAuth">
+					<a class="text-dark p-0 dropdown-toggle nav-link font-weight-bold position-relative" href="#collapseAuth" role="button" data-toggle="collapse" aria-haspopup="true" aria-expanded="false"  aria-controls="collapseAuth">
 						Sign Up
 					</a>
 					<div class="collapse" id="collapseAuth">
@@ -76,13 +76,13 @@
 							<div class="row">
 								<div class="col form-check">
 									<input class="form-check-input" type="radio" name="exampleRadios" id="lang-en" value="en" checked>
-									<label class="form-check-label" for="lang-en">
+									<label class="form-check-label text-grey-200" for="lang-en">
 									  EN
 									</label>
 								</div>
 								<div class="col form-check">
 									<input class="form-check-input" type="radio" name="exampleRadios" id="lang-id" value="id">
-									<label class="form-check-label" for="lang-id">
+									<label class="form-check-label text-grey-200" for="lang-id">
 										ID
 									</label>
 								</div>
@@ -95,41 +95,41 @@
 		<div class="box-shadow-dark position-relative bg-white">
 			<div class="container">
 				<div class="row align-items-center justify-content-between">
-					<div class="col-8">
-					<div class="row align-items-center">
-						<div class="col-10 col-md-5 col-lg-3">
-							<img class="py-2" src="assets/images/main-logo.png" alt="main-logo">
-						</div>
-						<div class="col-9 d-none d-lg-flex">
-							<div class="row align-items-center">
-								<div class="col-auto">
-									<a class="text-dark p-0 nav-link dropdown-toggle" href="#" id="plansDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Plans
-									</a>
-									<div class="dropdown-menu" aria-labelledby="plansDropdown">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
+					<div class="col-7 col-lg-8">
+						<div class="row align-items-center">
+							<div class="col-10 col-md-5 col-lg-3">
+								<img class="py-2" src="assets/images/main-logo.png" alt="main-logo">
+							</div>
+							<div class="col-9 d-none d-lg-flex">
+								<div class="row align-items-center">
+									<div class="col-auto">
+										<a class="text-dark p-0 nav-link dropdown-toggle" href="#" id="plansDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Plans
+										</a>
+										<div class="dropdown-menu" aria-labelledby="plansDropdown">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
 									</div>
-								</div>
-								<div class="col-auto">
-									<a href="#" class="text-dark">Promos</a>
-								</div>
-								<div class="col-auto">
-									<a href="#" class="text-dark">Gallery</a>
-								</div>
-								<div class="col-auto">
-									<a href="#" class="text-dark">Blogs</a>
-								</div>
-								<div class="col-auto">
-									<a href="#" class="text-dark">Contact Us</a>
-								</div>
-								<div class="col-auto">
-									<a href="#" class="text-dark">FAQ</a>
+									<div class="col-auto">
+										<a href="#" class="text-dark">Promos</a>
+									</div>
+									<div class="col-auto">
+										<a href="#" class="text-dark">Gallery</a>
+									</div>
+									<div class="col-auto">
+										<a href="#" class="text-dark">Blogs</a>
+									</div>
+									<div class="col-auto">
+										<a href="#" class="text-dark">Contact Us</a>
+									</div>
+									<div class="col-auto">
+										<a href="#" class="text-dark">FAQ</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					</div>
 					<div class="col-4">
 						<div class="row align-items-center justify-content-end d-none d-lg-flex">
@@ -168,7 +168,7 @@
 
 	<!-- jumbotron-slide -->
 	<section class="jumbotron w-full mt-5 mt-md-2 mt-lg-4 pb-0 mb-4 mb-lg-0 px-0 bg-white">
-		<div class="container mt-2 position-relative">
+		<div class="container-fluid mt-2 pl-0 pr-0 position-relative">
 			<!-- <div class="swiper-container swiper--jumbotron w-full">
 			  <div class="swiper-wrapper d-flex flex-nowrap">
 				<div class="swiper-slide px-2">
@@ -718,18 +718,18 @@
 						<div class="contact">
 							<div class="row mt-5">
 								<div class="col-2">
-									<img src="assets/images/icons/call-icon.png" alt="">
+									<img style="width: 22px;" src="assets/images/icons/call-icon.png" alt="">
 								</div>
 								<div class="col-auto px-0">
-									+62 811 675 342
+									<a class="text-grey-200" href="#">+62 811 675 342</a>
 								</div>
 							</div>
 							<div class="row mt-3">
 								<div class="col-2">
-									<img src="assets/images/icons/whatsapp-icon.png" alt="">
+									<img style="width: 22px;" src="assets/images/icons/whatsapp-icon.png" alt="">
 								</div>
 								<div class="col-auto px-0">
-									+62 811 675 342
+									<a class="text-grey-200" href="#">+62 811 675 342</a>
 								</div>
 							</div>
 							<div class="mt-4">
@@ -776,25 +776,25 @@
 						<button type="submit" class="btn btn-brown mb-2 col-12 col-md-auto">Submit</button>
 					</form>
 					<h4 class="font-weight-bold text-2xl mb-4">Follow Us</h4>
-					<div class="row px-2 px-md-0">
+					<div class="row px-2 px-md-0 sosmed">
 						<div class="col-2 px-2 px-md-4">
 							<a href="#">
-								<img src="assets/images/icons/facebook-icon.png" alt="facebook">
+								<div class="icon fb"></div>
 							</a>
 						</div>
 						<div class="col-2 px-2 px-md-4">
 							<a href="#">
-								<img src="assets/images/icons/instagram-icon.png" alt="instagram">
+								<div class="icon ig"></div>
 							</a>
 						</div>
 						<div class="col-2 px-2 px-md-4">
 							<a href="#">
-								<img src="assets/images/icons/tiktok-icon.png" alt="tiktok">
+								<div class="icon tiktok"></div>
 							</a>
 						</div>
 						<div class="col-2 px-2 px-md-4">
 							<a href="#">
-								<img src="assets/images/icons/youtube-icon-medsos.png" alt="youtube">
+								<div class="icon yt"></div>
 							</a>
 						</div>
 					</div>

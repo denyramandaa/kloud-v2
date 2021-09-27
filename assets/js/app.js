@@ -35,6 +35,12 @@ $(document).ready(function() {
             noSwiping: true,
             speed: 600
         });
+
+        swiperFilters.on('slideChange', function () {
+            $('.filter-menu').removeClass('active')
+            document.getElementsByClassName('filter-menu')[swiperFilters.activeIndex].classList.add('active')
+            swiperTabs.slideTo(swiperFilters.activeIndex)
+        });
     }
     function initSwiperTabFilters(){
         swiperTabs = new Swiper('.swiper--tabFilters', {
@@ -53,7 +59,6 @@ $(document).ready(function() {
         
         swiperTabs.on('slideChange', function () {
             swiperFilters.slideTo(swiperTabs.activeIndex)
-            $('.filter-menu').removeClass('active')
         });
     }
     function initSwiperWhyUs(){
@@ -196,8 +201,6 @@ $(document).ready(function() {
     })
     $('.filter-menu').each(function(idx) {
         $(this).click(() => {
-            $('.filter-menu').removeClass('active')
-            $(this).addClass('active')
             swiperFilters.slideTo(idx)
         })
     })
