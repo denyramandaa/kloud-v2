@@ -102,7 +102,8 @@ $(document).ready(function() {
                     slidesPerView: 1.2,
                     spaceBetween: 10,
                 }
-            }
+            },
+            followFinger:false
         });
     }
     function initSwiperTestimonials(){
